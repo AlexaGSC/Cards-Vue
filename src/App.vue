@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <BaseCard number="4" stick="♥"></BaseCard>
+    <BaseCard number="6" stick="♥"></BaseCard>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BaseCard from './components/BaseCard.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    BaseCard
   }
 }
 </script>
@@ -24,5 +24,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 60px;
 }
 </style>
